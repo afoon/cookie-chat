@@ -18,6 +18,7 @@ angular.module('chatroom').controller('mainCtrl', function($scope, messageServic
       function(response){
         console.log(response);
         $scope.messages = response.data;
+        $scope.message = "";
       }
     )}
     

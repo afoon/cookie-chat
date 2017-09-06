@@ -7,13 +7,18 @@
   </head>
   <body ng-controller="mainCtrl">
     <div class="main-container">
+      <div class="img-container">
+
+      </div>
       <h1> DevMountain Chat Room </h1>
-      <form ng-submit="postMessage(message)">
-        <input class="form-control text-box" type="text" ng-model="message" placeholder="Message">
+      <form ng-submit="postMessages(message)">
+        <input class="form-control text-box" type="text" ng-model="message" placeholder="Write a Message!">
       </form>
       <div class="messages-container">
+        <h3>Messgaes (Oldest to Newest)</h3>
         <p ng-repeat="message in messages ">
-          {{message.message}} </p>
+          {{message.message}} <span>{{message.createdAt | date: 'short' }}</span>
+        </p>
       </div>
     </div>
 

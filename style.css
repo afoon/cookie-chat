@@ -9,6 +9,18 @@ body {
   font-family: sans-serif;
 }
 
+img{
+  height: 100px;
+  width: 100%;
+}
+.img-container{
+  height: 230px;
+  width: 100%;
+  background-image: url(https://tinyurl.com/y9nfcwum);
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: center;
+}
 .main-container {
   width: 75%;
   margin: 10px auto;
@@ -19,15 +31,46 @@ body {
 
 .main-container h1 {
   text-align: center;
+  font-size: 60px;
 }
 
 .text-box {
-  margin: 0px auto;
+  margin: 0px auto 10px auto;
   width: 40%;
+
+}
+.messages-container{
+  border: 2px gray solid;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0px auto;
+  height: 40vh;
+  overflow: scroll;
 }
 
 p{
   text-align: center;
   margin: 3px 0;
   font-size: 17px;
+  overflow: scroll;
+}
+p:nth-child(even){
+  text-align: center;
+  margin: 3px 0;
+  font-size: 17px;
+  color:black;
+  background: #EEEEEE;
+}
+h3{
+  text-align: center;
+  font-style: bold;
+}
+p span{
+float: right;
+background:#00A0E7;
+border-radius: 25px;
+padding: 4px;
+color: white;
+font-size: 12px;
+margin: 0px 10px 0px 0px;
 }
